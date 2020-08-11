@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>PokeDex</title>
+    </head>
+
+    <script>
+        
+        function consultarPokemon(){
+            
+            var name = document.getElementById('pesquisa').value.toLowerCase();
+
+            fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
+            .then( function(response){
+                response.json()
+                .then(function (pokemon){
+                    let image = document.getElementById("pokemon_img");
+                    image.setAttribute("src", pokemon.sprites.other.dream_world.front_default);
+                })
+            })
+        }
+
+    </script>
+
+    <body>
+        
+        <!--Menu de navegação-->
+        <header>
+            <nav id="menu">
+                <a href="index.html"><img id="logo" src="img/Pokédex_logo.png"></a>
+                <ul>
+                    <li>Listar pokemons</li>
+                    <li>Pokemons iniciais</li>
+                    <li>Batalha pokemon</li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!--Pesquisar Pokemon-->
+        <main>
+            <div id="form">
+                <input id="pesquisa" type="text" placeholder="Digite o nome do Pokemon">
+                <input type="submit" value="Pesquisar" onclick="consultarPokemon()">
+            </div>
+
+            <div class="pokemon-info">
+                <div class="img-pokemon">
+                    <img id="pokemon_img" src="img/screen0.png">
+                </div>
+            </div>
+
+        </main>
+
+    
+    </body>
+</html>

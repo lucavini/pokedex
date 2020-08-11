@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;}
+ul{list-style: none;}
+
+
+/*MENU*/
+header{
+    background-color: #FA5858;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+#logo{
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#menu ul{
+    float: right;
+    margin-right: 35px;
+}
+
+#menu ul li{
+    float: left;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#menu ul li:hover{
+    background-color: #FE2E2E;
+}
+
+/*Pesquisar Pokemon*/
+main{
+    width: 100%;
+    float: left;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+main #form{
+    width: 100%;
+}
+
+main #form input[type="text"]{
+    width: 70%;
+    margin-right: 1%;
+    padding: 15px 10px;
+    border: 2px solid #FA5858;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
+main #form input[type="submit"]{
+    width: 18%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 100%;
+    cursor: pointer;
+    transition: .5s;
+    background-color: #FA5858;
+    color: #fff;
+    font-weight: bolder;
+    border: 2px solid #FA5858;
+}
+
+main #form input[type="submit"]:hover{
+    background-color: #fff;
+    color: #FA5858;
+}
+
+.pokemon-info{
+    width: 30%;
+    margin:0 auto;
+    margin-top: 5%;
+}
+
+.pokemon-info img{
+    width: 100%;
+}
