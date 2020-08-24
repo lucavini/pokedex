@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html> 
 <html lang="pt-br">
     
     <head>
@@ -8,24 +8,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
         <title>PokeDex</title>
     </head>
-
-    <script>
-        
-        function consultarPokemon(){
-            
-            var name = document.getElementById('pesquisa').value.toLowerCase();
-
-            fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
-            .then( function(response){
-                response.json()
-                .then(function (pokemon){
-                    let image = document.getElementById("pokemon_img");
-                    image.setAttribute("src", pokemon.sprites.other.dream_world.front_default);
-                })
-            })
-        }
-
-    </script>
 
     <body>
         
@@ -46,17 +28,45 @@
         <main>
             <div id="form">
                 <input id="pesquisa" type="text" placeholder="Digite o nome do Pokemon">
-                <input type="submit" value="Pesquisar" onclick="consultarPokemon()">
+                <input type="submit" value="Pesquisar" onclick="buscaPokemon()">
             </div>
 
-            <div class="pokemon-info">
+            <!-- <div class="pokemon-info">
                 <div class="img-pokemon">
                     <img id="pokemon_img" src="img/screen0.png">
                 </div>
-            </div>
+            </div> -->
+
+             <!--Pokemons em Infinite Scroll-->
+
+            <article class="panel">
+
+                <!-- <div class="pokemon_card">
+                    <div class="img_card">
+                        <img id="pokemon_img" src="img/25.png">
+                    </div>
+                    <p class="pokemon_id">ID: #25</p>
+                    <p class="pokemon_name">Pikachu</p>
+                    <div class="pokemon_attributes">
+                        <div class="attribute">
+                            <p class="pokemon_height">7</p>
+                            <p>height</p>
+                        </div>
+                        <div class="attribute">
+                            <p class="pokemon_weight">20</p>
+                            <p>weight</p>
+                        </div>
+                        <div class="attribute">
+                            <p class="pokemon_abilities">3</p>
+                            <p>abilities</p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </article>
 
         </main>
 
-    
+        <script src="js/script.js"></script>
     </body>
 </html>
