@@ -13,7 +13,7 @@ function setPokemonCard(identifier, pokemon){
 }
 
 function consultarPokemon(identifier){      
-    fetch(`https://pokeapi.co/api/v2/pokemon/${identifier}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${identifier}`).toLowerCase();
     .then( function(response){
         response.json()
         .then(function (pokemon){
