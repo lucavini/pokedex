@@ -1,7 +1,7 @@
 
 function setPokemonCard(identifier, pokemon){
     var image = document.getElementById(`pokemon_img${identifier}`)
-    var name = document.getElementById(`pokemon_name${identifier}`)
+    var name = document.getElementById(`pokemon_name${identifier}`).toLowerCase()
     var height = document.getElementById(`pokemon_height${identifier}`)
     var weight = document.getElementById(`pokemon_weight${identifier}`)
     var abilities = document.getElementById(`pokemon_abilities${identifier}`)
@@ -13,7 +13,7 @@ function setPokemonCard(identifier, pokemon){
 }
 
 function consultarPokemon(identifier){      
-    fetch(`https://pokeapi.co/api/v2/pokemon/${identifier}`).toLowerCase();
+    fetch(`https://pokeapi.co/api/v2/pokemon/${identifier}`)
     .then( function(response){
         response.json()
         .then(function (pokemon){
