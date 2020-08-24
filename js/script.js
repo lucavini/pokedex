@@ -1,7 +1,7 @@
 
 function setPokemonCard(identifier, pokemon){
     var image = document.getElementById(`pokemon_img${identifier}`)
-    var name = document.getElementById(`pokemon_name${identifier}`).toLowerCase()
+    var name = document.getElementById(`pokemon_name${identifier}`)
     var height = document.getElementById(`pokemon_height${identifier}`)
     var weight = document.getElementById(`pokemon_weight${identifier}`)
     var abilities = document.getElementById(`pokemon_abilities${identifier}`)
@@ -25,7 +25,7 @@ function consultarPokemon(identifier){
 function buscaPokemon(){
     var panel = document.getElementsByClassName("panel")[0]
     panel.innerHTML = ""
-    var identifier = document.getElementById("pesquisa").value
+    var identifier = (document.getElementById("pesquisa").value).toLowerCase()
     var card = document.createElement("div")
     card.className = "pokemon_card"
     card.innerHTML = criaCardPokemon(identifier)
