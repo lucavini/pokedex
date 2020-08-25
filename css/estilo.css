@@ -223,13 +223,12 @@ main #form input[type="submit"]:hover{
 
     /* CAMPO DE BUSCA */
     main #form{
-        width: 100%;
+        width: 80%;
     }
 
     main #form input[type="text"]{
         width: 100%;
         height: 4em;
-        font-size: 100%;
     }
     
     main #form input[type="submit"]{
@@ -249,13 +248,8 @@ main #form input[type="submit"]:hover{
     }
 
     /* MENU */
-    #menu{
-        width: 100%;
-    }
 
     #menu-bars{
-        display: block;
-        float: right;
         font-size: 2em;
         margin-right: 30px;
     }
@@ -266,24 +260,8 @@ main #form input[type="submit"]:hover{
         margin-left: 20px;
     }
 
-    #menu ul{
-        position: relative;
+    /* CAMPO DE BUSCA */
+    main #form{
         width: 100%;
-        top: -20px;
-        display: none;
-        margin: 0 auto;
-        margin-bottom: -15px;
-        text-align: center;
-    }
-    
-    #menu ul li{
-        float: none;
-        color: #fff;
-        background: #FA5858;
-        border-top: 2px solid #fff;
-        font-size: 1.5em;
-        cursor: pointer;
-        height: 3em;
-        line-height: 3em;
     }
 }
