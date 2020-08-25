@@ -172,8 +172,6 @@ main #form input[type="submit"]:hover{
 }
 
 
-
-
 /* Responsividade 786px */
 @media screen and (max-width:786px){
 
@@ -192,14 +190,14 @@ main #form input[type="submit"]:hover{
         color: #fff;
         font-size: 3em;
         line-height: 100px;
-        margin-right: 50px;
+        margin-right: 40px;
         cursor: pointer;
     }
 
     #logo{
         height: 50px;
         margin-top: 25px;
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     #menu ul{
@@ -225,7 +223,7 @@ main #form input[type="submit"]:hover{
 
     /* CAMPO DE BUSCA */
     main #form{
-        width: 80%;
+        width: 100%;
     }
 
     main #form input[type="text"]{
@@ -258,17 +256,14 @@ main #form input[type="submit"]:hover{
     #menu-bars{
         display: block;
         float: right;
-        color: #fff;
-        font-size: 3em;
-        line-height: 100px;
-        margin-right: 50px;
-        cursor: pointer;
+        font-size: 2em;
+        margin-right: 30px;
     }
 
     #logo{
-        height: 50px;
-        margin-top: 25px;
-        margin-left: 50px;
+        height: 30px;
+        margin-top: 30px;
+        margin-left: 20px;
     }
 
     #menu ul{
