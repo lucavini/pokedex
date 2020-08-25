@@ -254,6 +254,14 @@ main #form input[type="submit"]:hover{
         overflow-x: hidden;
     }
 
+    #logo{
+        margin-left: 30px;
+    }
+
+    #menu-bars{
+        margin-right: 30px;
+    }
+
     /* CAMPO DE BUSCA */
     main #form{
         width: 100%;
