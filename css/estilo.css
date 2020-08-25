@@ -43,6 +43,10 @@ header{
     background-color: #FE2E2E;
 }
 
+#menu-bars{
+    display: none;
+}
+
 /*Pesquisar Pokemon*/
 main{
     width: 100%;
@@ -157,4 +161,82 @@ main #form input[type="submit"]:hover{
 .attribute:nth-child(3){
     border-right:none;
     border-radius: 0 0 10px 0;
+}
+
+
+/* Responsividade 1024px */
+@media screen and (max-width:1024px){
+    #menu ul{
+        display: block;
+    }
+}
+
+
+/* Responsividade 786px */
+@media screen and (max-width:786px){
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* MENU */
+    #menu{
+        width: 100%;
+    }
+
+    #menu-bars{
+        display: block;
+        float: right;
+        color: #fff;
+        font-size: 3em;
+        line-height: 100px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    #logo{
+        height: 50px;
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+
+    #menu ul{
+        position: relative;
+        width: 100%;
+        top: -20px;
+        display: none;
+        margin: 0 auto;
+        margin-bottom: -15px;
+        text-align: center;
+    }
+    
+    #menu ul li{
+        float: none;
+        color: #fff;
+        background: #FA5858;
+        border-top: 2px solid #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+        height: 3em;
+        line-height: 3em;
+    }
+
+    /* CAMPO DE BUSCA */
+    main #form{
+        width: 80%;
+    }
+
+    main #form input[type="text"]{
+        width: 100%;
+        height: 4em;
+        font-size: 100%;
+    }
+    
+    main #form input[type="submit"]{
+        width: 100%;
+        height: 4em;
+        margin-top: 10px;
+    }
+
+    /* PANEL DE POKEMONS */
 }

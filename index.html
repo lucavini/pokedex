@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
         <title>PokeDex</title>
+        <script src="https://kit.fontawesome.com/d87da2b369.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -15,7 +16,8 @@
         <header>
             <nav id="menu">
                 <a href="index.html"><img id="logo" src="img/Pokédex_logo.png"></a>
-                <ul>
+                <i id="menu-bars" class="fas fa-bars" onclick="abremenu()"></i>
+                <ul id = "menu-itens">
                     <li>Listar pokemons</li>
                     <li>Pokemons iniciais</li>
                     <li>Batalha pokemon</li>
@@ -24,44 +26,15 @@
             </nav>
         </header>
 
-        <!--Pesquisar Pokemon-->
         <main>
+            <!--Pesquisar Pokemon-->
             <div id="form">
                 <input id="pesquisa" type="text" placeholder="Digite o nome do Pokemon">
                 <input type="submit" value="Pesquisar" onclick="buscaPokemon()">
             </div>
 
-            <!-- <div class="pokemon-info">
-                <div class="img-pokemon">
-                    <img id="pokemon_img" src="img/screen0.png">
-                </div>
-            </div> -->
-
              <!--Pokemons em Infinite Scroll-->
-
             <article class="panel">
-
-                <!-- <div class="pokemon_card">
-                    <div class="img_card">
-                        <img id="pokemon_img" src="img/25.png">
-                    </div>
-                    <p class="pokemon_id">ID: #25</p>
-                    <p class="pokemon_name">Pikachu</p>
-                    <div class="pokemon_attributes">
-                        <div class="attribute">
-                            <p class="pokemon_height">7</p>
-                            <p>height</p>
-                        </div>
-                        <div class="attribute">
-                            <p class="pokemon_weight">20</p>
-                            <p>weight</p>
-                        </div>
-                        <div class="attribute">
-                            <p class="pokemon_abilities">3</p>
-                            <p>abilities</p>
-                        </div>
-                    </div>
-                </div> -->
 
             </article>
 

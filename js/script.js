@@ -25,7 +25,7 @@ function consultarPokemon(identifier){
 function buscaPokemon(){
     var panel = document.getElementsByClassName("panel")[0]
     panel.innerHTML = ""
-    var identifier = (document.getElementById("pesquisa").value).toLowerCase()
+    var identifier = document.getElementById("pesquisa").value.toLowerCase()
     var card = document.createElement("div")
     card.className = "pokemon_card"
     card.innerHTML = criaCardPokemon(identifier)
@@ -100,6 +100,18 @@ window.addEventListener("scroll", function(event) {
     }
 
 }, false);
+
+
+function abremenu(){
+    var btn = document.getElementById("menu-bars")
+    if(btn.className === "fas fa-bars"){
+        document.getElementById("menu-itens").style.display = "block"
+        btn.className = "fas fa-times"
+    }else{
+        btn.className = "fas fa-bars"
+        document.getElementById("menu-itens").style.display = "none"
+    }
+}
 
 
 var $id = gerarCards($id)
