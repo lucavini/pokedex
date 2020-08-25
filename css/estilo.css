@@ -238,6 +238,13 @@ main #form input[type="submit"]:hover{
     }
 
     /* PANEL DE POKEMONS */
+    
+    .pokemon_card{
+        width: 30.3%;
+        margin-left: 2%;
+        margin-bottom: 1%;
+    }
+
 }
 
 
@@ -247,21 +254,17 @@ main #form input[type="submit"]:hover{
         overflow-x: hidden;
     }
 
-    /* MENU */
-
-    #menu-bars{
-        font-size: 2em;
-        margin-right: 30px;
-    }
-
-    #logo{
-        height: 30px;
-        margin-top: 30px;
-        margin-left: 20px;
-    }
-
     /* CAMPO DE BUSCA */
     main #form{
         width: 100%;
     }
+
+    /* PANEL DE POKEMONS */
+    
+    .pokemon_card{
+        width: 98%;
+        margin-left: 1%;
+        margin-bottom: 4%;
+    }
+
 }
