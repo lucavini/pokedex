@@ -172,6 +172,8 @@ main #form input[type="submit"]:hover{
 }
 
 
+
+
 /* Responsividade 786px */
 @media screen and (max-width:786px){
 
@@ -239,4 +241,54 @@ main #form input[type="submit"]:hover{
     }
 
     /* PANEL DE POKEMONS */
+}
+
+
+/* Responsividade 425px */
+@media screen and (max-width:425px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* MENU */
+    #menu{
+        width: 100%;
+    }
+
+    #menu-bars{
+        display: block;
+        float: right;
+        color: #fff;
+        font-size: 3em;
+        line-height: 100px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    #logo{
+        height: 50px;
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+
+    #menu ul{
+        position: relative;
+        width: 100%;
+        top: -20px;
+        display: none;
+        margin: 0 auto;
+        margin-bottom: -15px;
+        text-align: center;
+    }
+    
+    #menu ul li{
+        float: none;
+        color: #fff;
+        background: #FA5858;
+        border-top: 2px solid #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+        height: 3em;
+        line-height: 3em;
+    }
 }
